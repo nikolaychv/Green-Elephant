@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #003311;
+}
+
+#site-symbol {
+  width: 51px;
+  height: 43px;
+}
+
+#topic {
+  color: #ffffff;
+  display: inline-block;
+}
+
+#site-top {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+   padding: 0px 40px;
+   color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.drop-button {
+background-color: #ffffff;
+color: #003311;
+padding: 16px;
+font-size: 16px;
+cursor: pointer;
+border: 0;
+}
+
+.drop-button:hover, .drop-button:focus {
+background-color: #00b300;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background: rgba(230, 230, 230, 0.8);
+overflow: auto;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+min-width: 170px;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown {
+display: none;
+}
+
+#first-photo {
+  width: 100%;
+  border: 0;
+}
+
+#h1-title {
+  text-align: center;
+  padding: 15px;
+  background: #003311;
+  color: #ffffff;
+  margin-top: -5px;
+  height: 50px;
+}
+
+#our-mission-info {
+  height: 150px;
+  background: #003311;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 15px 15px 15px;
+}
+
+#facts-title {
+  color: black;
+  display: block;
+  text-align: center;
+  height: 70px;
+  padding: 10px;
+}
+
+#facts {
+  display: flex;
+  padding: 0 2%;
+}
+
+  #first-facts ul {
+    list-style: none;
+    display: inline-block;
+    flex: 2;
+  }
+
+  #second-facts ul {
+    list-style: none;
+    color: black;
+    text-align: center;
+    flex: 1;
+  }
+
+  #third-facts ul {
+    list-style: none;
+    flex: 2;
+  }
+
+  #fourth-facts ul {
+    list-style: none;
+    color: black;
+    text-align: center;
+    flex: 1;
+  }
+
+  #second-facts ul li {
+    padding: 8%;
+  }
+
+  #fourth-facts ul li {
+    padding: 6.4%;
+  }
+
+  footer {
+    background: #003311;
+    position: relative;
+    height: 100px;
+    clear: both;
+    color: #ffffff;
+    text-align: center;
+    }
+
+  #facebook {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  #instagram {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  #theButton {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    font-size: 19px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: 1px solid #003311;
+    background: rgba(230, 230, 230, 0.8);
+    color: #003311;
+    padding: 14px;
+  }
+
+  #theButton:hover {
+    background-color: #00b300;
+  }
+
+@media only screen and (max-width: 675px) {
+    header {
+      flex-direction: column;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .dropdown {
+      margin-top: 4%;
+      display: flex;
+    }
+
+    #our-mission-info {
+          height: 13%;
+    }
+
+    #h1-title {
+      margin-top: -3%;
+    }
+  }
+
+  @media only screen and (min-width: 675px) and (max-width: 1000px) {
+    header {
+      flex-direction: column;
+    }
+    nav ul {
+      margin-top: 4%;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    #our-mission-info {
+      height: 18%;
+    }
+
+    #facts {
+      flex-direction: column;
+  }
+
+    #first-facts {
+      display: none;
+  }
+
+    #third-facts {
+      display: none;
+  }
+
+    #our-mission-info {
+      margin-bottom: 6%;
+  }
+  }

@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #003311;
+}
+
+#site-symbol {
+  width: 51px;
+  height: 43px;
+}
+
+#topic {
+  color: #ffffff;
+  display: inline-block;
+}
+
+#site-top {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+   padding: 0px 40px;
+   color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.drop-button {
+background-color: #ffffff;
+color: #003311;
+padding: 16px;
+font-size: 16px;
+cursor: pointer;
+border: 0;
+}
+
+.drop-button:hover, .drop-button:focus {
+background-color: #00b300;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background: rgba(230, 230, 230, 0.8);
+overflow: auto;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+min-width: 170px;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown {
+display: none;
+}
+
+@media only screen and (min-width: 675px) and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .dropdown {
+    margin-top: 4%;
+    display: flex;
+  }
+}
+
+#photo-1 {
+  width: 100%;
+  border: 0;
+}
+
+#title-help {
+  text-align: center;
+  padding: 15px;
+  background: #ffffff;
+  color: #003311;
+  height: 80px;
+}
+
+#ways-to-help {
+  font-size: 22px;
+  text-align: center;
+  background: #003311;
+  color: #ffffff;
+  display: flex;
+}
+
+#info-one {
+  margin: 2%;
+}
+
+#info-two {
+  margin: 2%;
+}
+
+#info-three {
+  margin: 2%;
+}
+
+h3 {
+  margin-bottom: 3%;
+}
+
+#first-ol {
+  flex: 1;
+  padding: 3% 2%;
+}
+
+#second-ol {
+  flex: 1;
+  padding: 3% 3%;
+}
+
+#third-ol {
+  flex: 1;
+  padding: 3% 3%;
+}
+
+#title-organizations {
+  text-align: center;
+  padding: 15px;
+  color: #003311;
+  background: #FFD700;
+}
+
+#first-org {
+  width: 9%;
+  height: 9%;
+  margin: 4%;
+}
+
+#second-org {
+  width: 9%;
+  height: 9%;
+  margin: 4%;
+}
+
+#third-org {
+  width: 9%;
+  height: 9%;
+  margin: 4%;
+}
+
+#fourth-org {
+  width: 9%;
+  height: 9%;
+  margin: 4%;
+}
+
+#fifth-org {
+  width: 6%;
+  height: 4%;
+  margin: 4%;
+}
+
+#sixth-org {
+  width: 9%;
+  height: 9%;
+  margin: 4%;
+}
+
+#seventh-org {
+  width: 11%;
+  height: 14%;
+  margin: 4%;
+}
+
+#eighth-org {
+  width: 10%;
+  height: 12%;
+  margin: 4%;
+}
+
+#first-organizations {
+  text-align: center;
+}
+
+#second-organizations {
+  text-align: center;
+}
+
+  footer {
+    background: #003311;
+    position: relative;
+    height: 100px;
+    clear: both;
+    color: #ffffff;
+    text-align: center;
+    }
+
+  #facebook {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  #instagram {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 950px) {
+    #ways-to-help {
+      flex-direction: column;
+      padding-bottom: 6%;
+    }
+
+    #first-ol {
+      margin: 2%;
+    }
+
+    #second-ol {
+      margin: 2%;
+    }
+
+    #third-ol {
+      margin: 2%;
+    }
+
+    #first-ol h3 {
+      margin: 4% 0;
+    }
+
+    #second-ol h3 {
+      margin: 4% 0;
+    }
+
+    #third-ol h3 {
+      margin: 4% 0;
+    }
+  }
+
+  @media only screen and (min-width: 200px) and (max-width: 820px) {
+    #first-org {
+      width: 18%;
+      height: 18%;
+    }
+
+    #second-org {
+      width: 18%;
+      height: 18%;
+    }
+
+    #third-org {
+      width: 18%;
+      height: 18%;
+    }
+
+    #fourth-org {
+      width: 18%;
+      height: 18%;
+    }
+
+    #fifth-org {
+      width: 15%;
+      height: 13%;
+    }
+
+    #sixth-org {
+      width: 18%;
+      height: 18%;
+    }
+
+    #seventh-org {
+      width: 20%;
+      height: 23%;
+    }
+
+    #eighth-org {
+      width: 19%;
+      height: 21%;
+    }
+  }
+
+  #theButton {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    font-size: 19px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: 1px solid #003311;
+    background: rgba(230, 230, 230, 0.8);
+    color: #003311;
+    padding: 14px;
+  }
+
+  #theButton:hover {
+    background-color: #00b300;
+  }
